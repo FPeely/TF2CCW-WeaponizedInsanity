@@ -1,0 +1,515 @@
+	// -----------------------------------------------------------------------------
+// Welcome to the Peels' Weapon Workshop Pack! This is one of the main files.
+// -----------------------------------------------------------------------------
+"custom_items_game"
+{
+	"items"
+		{
+		"8801"
+		{
+			"name"						"TF_WEAPON_COMICALLYLARGE_REVOLVER"
+			"prefab"					"weapon_revolver"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color" 			"188 89 217 255"
+			"item_name"					"Huge Ego"
+			"item_type_name"			"Comically Large Revolver"
+			"item_description"			"This weapon shoots its entire clip all at once
+
+				I've fucking had it with you.
+
+				Model by: boobies1102
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+			"image_inventory"			"backpack/weapons/c_models/c_comicallylargerevolver"
+			"model_world"				"models/weapons/c_models/c_comicallylargerevolver/c_comicallylargerevolver.mdl"
+			"model_player"				"models/weapons/c_models/c_comicallylargerevolver/c_comicallylargerevolver.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"attributes"
+			{
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"2.0"
+				}
+				"mod ammo per shot"
+				{
+					"attribute_class"	"mod_ammo_per_shot"
+					"value"				"6.0"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"3.0"
+				}
+			}
+		}
+		"8802"
+		{
+			"name"						"TF_WEAPON_SOVIET_SNIPER"
+			"prefab"					"weapon_sniperrifle"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_quality"				"rarity6"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Soviet Sourvenir"
+			"item_type_name"			"Modified Assault Rifle"
+			"item_description"			"Grants crits when hitting enemies continuously.
+
+				''And another one!''
+
+				Model by: Corvalho
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"sovietSouvenir"
+			"item_iconname"				"Revolver"
+			"image_inventory"			"backpack/weapons/c_models/c_sovietsouvenir"
+			"model_world"				"models/weapons/c_models/c_soviet_souvenir/c_soviet_souvenir.mdl"
+			"model_player"				"models/weapons/c_models/c_soviet_souvenir/c_soviet_souvenir.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"static_attrs"	
+				
+			{
+				"provide on active" 	"1"
+				"fire rate bonus"		"0.6"
+				"add condition on hit self" "33 1.5"
+				"sniper no dmg charge" 	"1"
+				"damage penalty"		"0.75"
+
+			}
+		}
+		"8803"
+		{
+			"name"						"TF_WEIGHTYKILLER"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Weighty Killer"
+			"item_type_name"			"Heavy Shotgun"
+			"item_description"			"
+				''Heavy will rip off your head.''
+
+				Model by: wircea
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"wircea"
+			"image_inventory"			"backpack/weapons/c_models/c_knifegun"
+			"model_world"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
+			"model_player"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" 	"1"
+				"mod max primary clip override" 	"3"
+				"damage bonus"						"5"
+				"weapon spread bonus"				"0"
+				"bullets per shot penalty"			"0.1"
+				"maxammo secondary reduced" 		"0.5"
+				"fire rate penalty"					"1.7"
+				"no damage falloff over distance" 	"1"
+			}
+		}
+		"8804"
+		{
+			"name"						"TF_PHLAUNCHER"
+			"prefab"					"weapon_stickybomb_launcher"
+			"item_class"				"tf_weapon_pistol"
+			"show_in_armory"				"1"
+			"item_slot"					"secondary"
+			"bucket"					"1"
+
+			"propername"				"1"
+			"item_name_color" 			"188 89 217 255"
+			"item_name"					"Stock Glock"
+			"item_type_name"			"Stupidly-Modified Pistol"
+			"item_description"			"
+				''I got a glock in my Rari''
+
+				Model by: BlackSlave
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"glock"
+			"item_iconname"				"Stock Glock"
+//			"image_inventory"			"backpack/weapons/c_models/c_glock"
+			"model_world"				"models/weapons/c_models/c_glock/c_glock.mdl"
+			"model_player"				"models/weapons/c_models/c_glock/c_glock.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"demoman"					"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" 	"1"
+				"punch angle mod mult hidden"	"0"
+				"mod max primary clip override" "17"
+				"mod ammo per reload" 			"9"
+				"damage bonus"					"1.23"
+				"maxammo primary increased" 	"3"
+				"fire rate penalty"				"2"
+			}
+		}
+		"8805"
+		{
+			"name"						"TF_PHLAUNCHER"
+			"prefab"					"weapon_minigun"
+			"item_class"				"tf_weapon_minigun"
+			"show_in_armory"				"1"
+			"item_slot"					"primary"
+			"bucket"					"0"
+
+			"propername"				"0"
+			"item_name_color" 			"188 89 217 255"
+			"item_name"					"Force-Ten Minigun"
+			"item_type_name"			"Aberration"
+			"item_description"			"
+				''Heavy is flyyiiing!''
+
+				Model by: Karma Charger
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"aberration"
+			"item_iconname"				"Force-Ten Minigun"
+//			"image_inventory"			"backpack/weapons/c_models/c_forceten_minigun"
+			"model_world"				"models/weapons/c_models/c_forceten_minigun/c_forceten_minigun.mdl"
+			"model_player"				"models/weapons/c_models/c_forceten_minigun/c_forceten_minigun.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"punch angle mod mult hidden"	"10"
+				"bullets per shot bonus" "10"
+				"dmg taken from fall reduced" "0.5"
+				"spread penalty" "10"
+				"mod ammo per shot" "10"
+				"apply self knockback" "500"
+
+			}
+		}
+		"8806"
+		{
+			"name"						"TF_PHLAUNCHER"
+			"prefab"					"weapon_smg"
+			"item_class"				"tf_weapon_smg"
+			"show_in_armory"				"1"
+			"item_slot"					"secondary"
+			"bucket"					"1"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"L.A.S.E.R."
+			"item_type_name"			"Precise SMG"
+			"item_description"			"
+
+				Aim for the head.
+
+				Model by: GoldInk9734
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"laser"
+			"item_iconname"				"LASER"
+			"image_inventory"			"backpack/weapons/c_models/c_f2000"
+			"model_world"				"models/weapons/c_models/c_f2000/c_f2000.mdl"
+			"model_player"				"models/weapons/v_models/v_f2000/v_f2000_sniper.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" 	"1"
+				"can headshot" "1"
+				"weapon spread bonus" "1.5"
+				"damage penalty" "0.7"
+				"crit mod disabled" "1"
+			}
+		}
+		"8807"
+		{
+			"name"					"TF_WEAPON_SWORD_WRENCH"
+			"prefab"					"weapon_wrench"
+			"show_in_armory"				"1"
+			"item_slot"					"melee"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Ex-calibrated"
+			"item_type_name"			"Wrench-Blade"
+			"item_description"			"
+				''Sometimes your greatest enemy is your best master.''
+
+				Model by: Haau
+				Weapon from the ''Weaponized Insanity Pack''!"	
+			"item_logname"				"sword_wrench"
+			"item_iconname"				"Sword"
+			"image_inventory"			"backpack/weapons/c_models/c_excalibur"
+			"model_world"				"models/weapons/c_models/c_excalibur/c_excalibur.mdl"
+			"model_player"				"models/weapons/c_models/c_excalibur/c_excalibur.mdl"
+			"attach_to_hands"				"1"
+			"used_by_classes"
+			{
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" 	"1"
+				"damage bonus"					"1.45"
+				"melee range multiplier crit"	"1.35"
+				"lifesteal crit"				"1"
+				"crit mod disabled hidden"		"1.1"
+				"fire rate penalty"				"1.5"
+				"upgrade rate decrease"			"0.50"
+				"sapper damage penalty"			"0"
+			}
+		}
+		"8808"
+		{
+			"name"					"TF_WEAPON_BIG_NAILGUN"
+			"prefab"					"weapon_shotgun"
+			"item_class"				"tf_weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Jackhammer"
+			"item_type_name"			"Heavy Nailgun"
+			"item_description"			"Fires medium-range nails.
+
+				''Buildin'.''
+
+				Model by: Choev
+				Weapon from the ''Weaponized Insanity Pack''!"	
+			"item_logname"				"big_nailgun"
+			"item_iconname"				"BigNailgun"
+//			"image_inventory"			"backpack/weapons/c_models/c_pancor_jackhammer"
+			"model_world"				"models/weapons/c_models/c_pancor_jackhammer/c_pancor_jackhammer.mdl"
+			"model_player"				"models/weapons/c_models/c_pancor_jackhammer/c_pancor_jackhammer.mdl"
+			"attach_to_hands"				"1"
+			"used_by_classes"
+			{
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" 	"1"
+				"punch angle mod mult hidden"	"0"
+				"damage bonus" "2"
+				"Projectile speed increased hidden" "2"
+				"weapon spread bonus" "0.2"
+				"fire rate bonus" "0.2"
+				"mod max primary clip override" "-1"
+				"override projectile type" "29"
+				"maxammo primary increased" "3.15"
+			}
+		}
+		"8809"
+		{
+			"name"					"TF_WEAPON_wakizashi"
+			"prefab"					"weapon_bat"
+			"item_class"				"tf_weapon_bat"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+			"bucket"					"2"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Revengeance"
+			"item_type_name"			"Light Sword"
+			"item_description"			"Replaces your primary and your melee
+
+			''Freedom is calling, to all men who bend their will.''
+
+				EXPERIMENTAL WEAPON! May go through changes.
+				Model by: Spike Nitros
+				Weapon from the ''Weaponized Insanity Pack''!"	
+			"item_logname"				"wakizashi"
+			"item_iconname"				"wakizashi"
+//			"image_inventory"			"backpack/weapons/c_models/c_wakizashi"
+			"model_world"				"models/weapons/c_models/c_wakizashi/c_wakizashi.mdl"
+			"model_player"				"models/weapons/c_models/c_wakizashi/c_wakizashi.mdl"
+			"attach_to_hands"				"1"
+			"used_by_classes"
+			{
+				"scout"				"1"
+			}
+			"static_attrs"
+			{
+				"damage bonus" "2"
+				"move speed bonus" "1.2"
+				"maxammo secondary reduced" "0"
+				"health drain" "-5"
+				"crit mod disabled"		"0"
+			}
+		}
+		"8810"
+		{
+			"name"					"TF_WEAPON_HEAVYARMOR"
+			"prefab"					"wearable"
+			"item_class"				"tf_wearable"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Wall"
+			"item_type_name"			"Experimental Heavy Armor"
+			"item_description"			"Replaces your minigun
+
+				Model by: Choev
+				Weapon from the ''Weaponized Insanity Pack''!"	
+			"item_logname"				"dozer"
+			"item_iconname"				"dozer"
+			"image_inventory"			"backpack/wearables/dozer"
+			"model_world"				"models/cosmetics/heavy/payday/bulldozer.mdl"
+			"model_player"				"models/cosmetics/heavy/payday/bulldozer.mdl"
+			"extra_wearable"			"models/cosmetics/heavy/payday/bulldozer.mdl"
+			"attach_to_hands"			"0"
+			"used_by_classes"
+			{
+				"heavy"				"1"
+			}
+			"loadondemand"				"1"
+			"act_as_wearable"			"1"
+			"static_attrs"
+			{
+				"maxammo secondary increased" "1.5"
+				"dmg taken from bullets reduced" "0.70"
+				"dmg taken from blast reduced" "0.80"
+				"dmg taken from fire reduced" "0.2"
+				"dmg taken from crit increased" "2"
+			}
+		}
+		"8811"
+		{
+			"name"					"TF_WEAPON_SPRAY"
+			"prefab"					"weapon_pistol"
+			"item_class"				"tf_weapon_pistol"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Spray and Pray"
+			"item_type_name"			"Makeshift Automatic Pistol"
+			"item_description"			"
+			''It's art, ma!''
+
+				Model by: Haau
+				Weapon from the ''Weaponized Insanity Pack''!"	
+			"item_logname"				"spray"
+			"item_iconname"				"spray"
+//			"image_inventory"			"backpack/weapons/c_models/c_sprayer"
+			"model_world"				"models/weapons/w_models/w_splatshot.mdl"
+			"model_player"				"models/weapons/v_models/v_splatshot_scout.mdl"
+			"attach_to_hands"				"2"
+			"used_by_classes"
+			{
+				"scout"				"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" "1"
+				"fire rate bonus" "0.5"
+				"heal on hit for rapidfire" "3"
+				"damage penalty" "0.65"
+			}
+		}
+		"8812"
+		{
+			"name"						"TF_STREAKSHOTGUN"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Hit Streak"
+			"item_type_name"			"KS-23"
+			"item_description"			"
+				''Heavy needs more boolets!''
+
+				Model by: GoldInk9734
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"wircea"
+			"image_inventory"			"backpack/weapons/w_models/w_ks23"
+			"model_world"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
+			"model_player"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"instant reload on hit" 			"1"
+				"fire rate bonus"					"0.4"
+				"Reload time increased"				"2"
+				"clip size penalty"					"0.5"
+				"maxammo secondary reduced"			"0.5"
+			}
+		}
+		"8813"
+		{
+			"name"						"TF_STREAKSHOTGUN"
+			"prefab"					"weapon_revolver"
+			"item_class"				"tf_weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Silent Treatment"
+			"item_type_name"			"Silenced Shotgun"
+			"item_description"			"
+				''You can take my gun, but you'll never take my heart.''
+
+				Model by: boobies1102
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"wircea"
+			"image_inventory"			"backpack/weapons/w_models/w_ks23"
+			"model_world"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
+			"model_player"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+			{
+				"allow reload while cloaked"		"1"
+				"damage penalty"					"0.8"
+				"cloak consume rate increased"		"2.5"
+				"clip size penalty"					"0.5"
+			}
+		}
+	}
+}
+

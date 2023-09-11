@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack/wearables/dozer_large"
+	"$translucent" 1
+}

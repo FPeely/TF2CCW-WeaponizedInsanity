@@ -228,7 +228,7 @@
 			{
 				"provide on active" 	"1"
 				"can headshot" "1"
-				"weapon spread bonus" "1.5"
+				"weapon spread bonus" "0.7"
 				"damage penalty" "0.7"
 				"crit mod disabled" "1"
 			}
@@ -442,7 +442,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Hit Streak"
-			"item_type_name"			"KS-23"
+			"item_type_name"			"Ammo-Consuming Shotgun"
 			"item_description"			"
 				''Heavy needs more boolets!''
 
@@ -461,10 +461,50 @@
 			"static_attrs"
 			{
 				"instant reload on hit" 			"1"
-				"fire rate bonus"					"0.4"
+				"fire rate penalty"					"1.2"
 				"Reload time increased"				"2"
 				"clip size penalty"					"0.5"
 				"maxammo secondary reduced"			"0.5"
+			}
+		}
+		"8813"
+		{
+			"name"						"TF_STREAKSHOTGUN"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Silent Treatment"
+			"item_type_name"			"Silenced Shotgun"
+			"item_description"			"Silenced: This weapon is very silent. Crits will be loud!
+
+				''You can take my name... but you'll never take my guns!''
+
+				Model by: boobies1102
+				Weapon from the ''Weaponized Insanity Pack''!"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"wircea"
+//			"image_inventory"			"backpack/weapons/w_models/w_silent"
+			"model_world"				"models/weapons/c_models/c_silent/c_silent.mdl"
+			"model_player"				"models/weapons/v_models/v_silent/v_silent_spy.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"static_attrs"
+			{
+				"silent killer no killfeed" "1"
+				"damage penalty" "0.8"
+				"fire rate penalty"	"1.5"
+				"clip size penalty" "0.5"
+				"maxammo primary reduced" "0.4"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SilencedShotgun.Single"
 			}
 		}
 	}

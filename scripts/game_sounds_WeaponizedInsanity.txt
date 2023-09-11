@@ -14,3 +14,4 @@
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"		"1.0"
 	"wave"			"weapons/silenced_shotgun_shoot.wav"
+}

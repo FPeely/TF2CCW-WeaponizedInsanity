@@ -32,28 +32,13 @@
 			{
 				"spy"					"1"
 			}
-			"attributes"
+			"static_attrs"
 			{
-				"can headshot"
-				{
-					"attribute_class"	"can_headshot"
-					"value"				"1"
-				}
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"				"2.0"
-				}
-				"mod ammo per shot"
-				{
-					"attribute_class"	"mod_ammo_per_shot"
-					"value"				"6.0"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"				"3.0"
-				}
+				"can headshot" "1"
+				"damage bonus"	"2.0"
+				"mod ammo per shot"	"6.0"
+				"fire rate penalty"	"3.0"
+				"crit mod disabled" "1"
 			}
 		}
 		"8802"
@@ -85,7 +70,6 @@
 				"sniper"					"1"
 			}
 			"static_attrs"	
-				
 			{
 				"provide on active" 	"1"
 				"fire rate bonus"		"0.6"
@@ -153,7 +137,7 @@
 				Weapon from the ''Weaponized Insanity Pack''!"
 			"item_logname"				"glock"
 			"item_iconname"				"Stock Glock"
-//			"image_inventory"			"backpack/weapons/c_models/c_glock"
+			"image_inventory"			"backpack/weapons/c_models/c_glock"
 			"model_world"				"models/weapons/c_models/c_glock/c_glock.mdl"
 			"model_player"				"models/weapons/c_models/c_glock/c_glock.mdl"
 			"attach_to_hands"			"1"
@@ -260,7 +244,8 @@
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Ex-calibrated"
 			"item_type_name"			"Wrench-Blade"
-			"item_description"			"
+			"item_description"			"Increased random crit chance
+
 				''Sometimes your greatest enemy is your best master.''
 
 				Model by: Haau
@@ -277,13 +262,15 @@
 			}
 			"static_attrs"
 			{
-				"provide on active" 	"1"
+				"allowed in medieval mode"		"1"
+				"provide on active" 			"1"
 				"damage bonus"					"1.45"
 				"melee range multiplier crit"	"1.35"
 				"lifesteal crit"				"1"
 				"crit mod disabled hidden"		"1.1"
+				"buildings max level penalty"	"1"
 				"fire rate penalty"				"1.5"
-				"upgrade rate decrease"			"0.50"
+				"upgrade rate decrease"			"0.5"
 				"sapper damage penalty"			"0"
 			}
 		}
@@ -307,7 +294,7 @@
 				Weapon from the ''Weaponized Insanity Pack''!"	
 			"item_logname"				"big_nailgun"
 			"item_iconname"				"BigNailgun"
-//			"image_inventory"			"backpack/weapons/c_models/c_pancor_jackhammer"
+			"image_inventory"			"backpack/weapons/c_models/c_pancor_jackhammer"
 			"model_world"				"models/weapons/c_models/c_pancor_jackhammer/c_pancor_jackhammer.mdl"
 			"model_player"				"models/weapons/c_models/c_pancor_jackhammer/c_pancor_jackhammer.mdl"
 			"attach_to_hands"				"1"
@@ -317,7 +304,6 @@
 			}
 			"static_attrs"
 			{
-				"provide on active" 	"1"
 				"punch angle mod mult hidden"	"0"
 				"damage bonus" "2"
 				"Projectile speed increased hidden" "2"
@@ -326,6 +312,12 @@
 				"mod max primary clip override" "-1"
 				"override projectile type" "29"
 				"maxammo primary increased" "3.15"
+				"move speed penalty" 	"0.9"
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Nailgun.Single"
+				"sound_burst"			"Weapon_Nailgun.SingleCrit"
 			}
 		}
 		"8809"
@@ -350,7 +342,7 @@
 				Weapon from the ''Weaponized Insanity Pack''!"	
 			"item_logname"				"wakizashi"
 			"item_iconname"				"wakizashi"
-//			"image_inventory"			"backpack/weapons/c_models/c_wakizashi"
+			"image_inventory"			"backpack/weapons/c_models/c_revengeance"
 			"model_world"				"models/weapons/c_models/c_wakizashi/c_wakizashi.mdl"
 			"model_player"				"models/weapons/c_models/c_wakizashi/c_wakizashi.mdl"
 			"attach_to_hands"				"1"
@@ -424,7 +416,7 @@
 				Weapon from the ''Weaponized Insanity Pack''!"	
 			"item_logname"				"spray"
 			"item_iconname"				"spray"
-//			"image_inventory"			"backpack/weapons/c_models/c_sprayer"
+			"image_inventory"			"backpack/weapons/c_models/c_splattershot"
 			"model_world"				"models/weapons/w_models/w_splatshot.mdl"
 			"model_player"				"models/weapons/v_models/v_splatshot_scout.mdl"
 			"attach_to_hands"				"2"
@@ -473,41 +465,6 @@
 				"Reload time increased"				"2"
 				"clip size penalty"					"0.5"
 				"maxammo secondary reduced"			"0.5"
-			}
-		}
-		"8813"
-		{
-			"name"						"TF_STREAKSHOTGUN"
-			"prefab"					"weapon_revolver"
-			"item_class"				"tf_weapon_shotgun"
-			"show_in_armory"			"1"
-			"item_slot"					"primary"
-
-			"propername"				"1"
-			"item_name_color" 			"255 232 0 255"
-			"item_name"					"Silent Treatment"
-			"item_type_name"			"Silenced Shotgun"
-			"item_description"			"
-				''You can take my gun, but you'll never take my heart.''
-
-				Model by: boobies1102
-				Weapon from the ''Weaponized Insanity Pack''!"
-			"item_logname"				"test_weapon"
-//			"item_iconname"				"wircea"
-			"image_inventory"			"backpack/weapons/w_models/w_ks23"
-			"model_world"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
-			"model_player"				"models/weapons/c_models/c_ks23/c_ks23.mdl"
-			"attach_to_hands"			"1"
-			"used_by_classes"
-			{
-				"spy"					"1"
-			}
-			"static_attrs"
-			{
-				"allow reload while cloaked"		"1"
-				"damage penalty"					"0.8"
-				"cloak consume rate increased"		"2.5"
-				"clip size penalty"					"0.5"
 			}
 		}
 	}

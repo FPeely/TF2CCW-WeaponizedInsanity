@@ -434,7 +434,7 @@
 		}
 		"8812"
 		{
-			"name"						"TF_STREAKSHOTGUN"
+			"name"						"TF_WEAPON_STREAKSHOTGUN"
 			"prefab"					"weapon_shotgun"
 			"show_in_armory"			"1"
 			"item_slot"					"secondary"
@@ -460,8 +460,8 @@
 			}
 			"static_attrs"
 			{
+				"weapon spread bonus"				"0.5"
 				"instant reload on hit" 			"1"
-				"fire rate penalty"					"1.2"
 				"Reload time increased"				"2"
 				"clip size penalty"					"0.5"
 				"maxammo secondary reduced"			"0.5"
@@ -469,7 +469,7 @@
 		}
 		"8813"
 		{
-			"name"						"TF_STREAKSHOTGUN"
+			"name"						"TF_WEAPON_SILENTSHOTGUN"
 			"prefab"					"weapon_shotgun"
 			"show_in_armory"			"1"
 			"item_slot"					"primary"
@@ -505,6 +505,42 @@
 			"visuals"
 			{
 				"sound_single_shot"		"Weapon_SilencedShotgun.Single"
+			}
+		}
+		"8814"
+		{
+			"name"						"TF_WEAPON_CONC_GRENADE"
+			"prefab"					"weapon_fireaxe"
+			"show_in_armory"			"1"
+			"item_slot"					"melee"
+
+			"propername"				"1"
+			"item_name_color" 			"255 232 0 255"
+			"item_name"					"Anvil's Fear"
+			"item_type_name"			"Molten Hammer"
+			"item_description"			"
+				''We all lift together.''
+
+				Model by: CarbonF + Emily Vasquez
+				Weapon from the ''Weaponized Insanity Pack''!"
+
+			"item_logname"				"hammer"
+//			"item_iconname"				"hammer"
+//			"image_inventory"			"backpack/weapons/c_models/c_fearnoanvil/c_fearnoanvil"
+			"model_world"				"models/weapons/c_models/c_fearnoanvil/c_fearnoanvil.mdl"
+			"model_player"				"models/weapons/c_models/c_fearnoanvil/c_fearnoanvil.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"pyro"					"1"
+			}
+			"static_attrs"
+			{
+				"provide on active" "1"
+				"dmg bonus vs buildings" "1.5"
+				"SET BONUS: dmg from sentry reduced" "0.7"
+				"damage penalty" "0.8"
+				"crit mod disabled" "0"
 			}
 		}
 	}

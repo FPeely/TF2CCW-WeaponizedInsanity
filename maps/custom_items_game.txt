@@ -15,7 +15,7 @@
 			"propername"				"1"
 			"item_name_color" 			"188 89 217 255"
 			"item_name"					"Huge Ego"
-			"item_type_name"			"Comically Large Revolver"
+			"item_type_name"			"Revolver"
 			"item_description"			"This weapon shoots its entire clip all at once
 
 				I've fucking had it with you.
@@ -52,7 +52,7 @@
 			"item_quality"				"rarity6"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Soviet Sourvenir"
-			"item_type_name"			"Modified Assault Rifle"
+			"item_type_name"			"Sniper Rifle"
 			"item_description"			"Grants crits when hitting enemies continuously.
 
 				''And another one!''
@@ -89,7 +89,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Weighty Killer"
-			"item_type_name"			"Heavy Shotgun"
+			"item_type_name"			"Shotgun"
 			"item_description"			"
 				''Heavy will rip off your head.''
 
@@ -129,7 +129,7 @@
 			"propername"				"1"
 			"item_name_color" 			"188 89 217 255"
 			"item_name"					"Stock Glock"
-			"item_type_name"			"Stupidly-Modified Pistol"
+			"item_type_name"			"Pistol"
 			"item_description"			"
 				''I got a glock in my Rari''
 
@@ -207,7 +207,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"L.A.S.E.R."
-			"item_type_name"			"Precise SMG"
+			"item_type_name"			"SMG"
 			"item_description"			"
 
 				Aim for the head.
@@ -243,7 +243,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Ex-calibrated"
-			"item_type_name"			"Wrench-Blade"
+			"item_type_name"			"Wrench"
 			"item_description"			"Increased random crit chance
 
 				''Sometimes your greatest enemy is your best master.''
@@ -285,7 +285,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Jackhammer"
-			"item_type_name"			"Heavy Nailgun"
+			"item_type_name"			"Nailgun"
 			"item_description"			"Fires medium-range nails.
 
 				''Buildin'.''
@@ -332,7 +332,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Revengeance"
-			"item_type_name"			"Light Sword"
+			"item_type_name"			"Sword"
 			"item_description"			"Replaces your primary and your melee
 
 			''Freedom is calling, to all men who bend their will.''
@@ -408,7 +408,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Spray and Pray"
-			"item_type_name"			"Makeshift Automatic Pistol"
+			"item_type_name"			"Automatic Pistol"
 			"item_description"			"
 			''It's art, ma!''
 
@@ -442,7 +442,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Hit Streak"
-			"item_type_name"			"Ammo-Consuming Shotgun"
+			"item_type_name"			"Shotgun"
 			"item_description"			"
 				''Heavy needs more boolets!''
 
@@ -477,7 +477,7 @@
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
 			"item_name"					"Silent Treatment"
-			"item_type_name"			"Silenced Shotgun"
+			"item_type_name"			"Shotgun"
 			"item_description"			"Silenced: This weapon is very silent. Crits will be loud!
 
 				''You can take my name... but you'll never take my guns!''
@@ -509,40 +509,46 @@
 		}
 		"8814"
 		{
-			"name"						"TF_WEAPON_CONC_GRENADE"
-			"prefab"					"weapon_fireaxe"
+			"name"						"TF_WEAPON_SILENTSHOTGUN"
+			"prefab"					"weapon_rocketlauncher"
 			"show_in_armory"			"1"
-			"item_slot"					"melee"
+			"item_slot"					"primary"
 
 			"propername"				"1"
 			"item_name_color" 			"255 232 0 255"
-			"item_name"					"Anvil's Fear"
-			"item_type_name"			"Molten Hammer"
-			"item_description"			"
-				''We all lift together.''
+			"item_name"					"Technological Marvel"
+			"item_type_name"			"Laser Cannon"
+			"item_description"			"Shoots lasers instead of rockets
 
-				Model by: CarbonF + Emily Vasquez
+				''Melt, maggot!''
+
+				Model by: SVDL + A Paint Bucket Named Huey
 				Weapon from the ''Weaponized Insanity Pack''!"
-
-			"item_logname"				"hammer"
-//			"item_iconname"				"hammer"
-//			"image_inventory"			"backpack/weapons/c_models/c_fearnoanvil/c_fearnoanvil"
-			"model_world"				"models/weapons/c_models/c_fearnoanvil/c_fearnoanvil.mdl"
-			"model_player"				"models/weapons/c_models/c_fearnoanvil/c_fearnoanvil.mdl"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"wircea"
+//			"image_inventory"			"backpack/weapons/w_models/w_silent"
+			"model_world"				"models/workshop/weapons/c_models/c_megalaser/c_megalaser.mdl"
+			"model_player"				"models/workshop/weapons/c_models/c_megalaser/c_megalaser.mdl"
 			"attach_to_hands"			"1"
 			"used_by_classes"
 			{
-				"pyro"					"1"
+				"soldier"					"1"
+			}
+			"attributes"
+			{
+				"energy weapon no ammo"
+				{
+					"attribute_class"    "mod_ammo_per_shot"
+					"value"				"-1"
+				}
 			}
 			"static_attrs"
 			{
-				"provide on active" "1"
-				"dmg bonus vs buildings" "1.5"
-				"SET BONUS: dmg from sentry reduced" "0.7"
-				"damage penalty" "0.8"
-				"crit mod disabled" "0"
+				"mod max primary clip override" "-1"
+				"override projectile type" "32"
+				"hide ammo hud" "1"
 			}
+			
 		}
 	}
 }
-
